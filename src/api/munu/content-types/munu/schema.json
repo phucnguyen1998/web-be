@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "munuses",
+  "info": {
+    "singularName": "munu",
+    "pluralName": "munuses",
+    "displayName": "Munus"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "pageId": {
+      "type": "string"
+    },
+    "page_menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-menu.page-menu",
+      "mappedBy": "munus"
+    }
+  }
+}

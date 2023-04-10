@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_menus",
+  "info": {
+    "singularName": "page-menu",
+    "pluralName": "page-menus",
+    "displayName": "PageMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "munus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::munu.munu",
+      "inversedBy": "page_menu"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}
